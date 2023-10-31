@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "35E9F45A-8E7B-485F-B448-A61247DFA732"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "E1129375-2637-4D33-8C48-9F9D1C526751"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PomeloTestHB/PopularArticles/ViewModel/ArticleVM.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "23"
+            endingLineNumber = "23"
+            landmarkName = "getAllMostPopularArticles()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "E1129375-2637-4D33-8C48-9F9D1C526751 - 33a267381e126480"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;PomeloTestHB.PopularModel&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in PomeloTestHB.ArticleVM.getAllMostPopularArticles() -&gt; ()"
+                  moduleName = "PomeloTestHB"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/premalkhetani/Downloads/PomeloTestHB/PomeloTestHB/PopularArticles/ViewModel/ArticleVM.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "23"
+                  endingLineNumber = "23"
+                  offsetFromSymbolStart = "536">
+               </Location>
+               <Location
+                  uuid = "E1129375-2637-4D33-8C48-9F9D1C526751 - 33a267381e126480"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;PomeloTestHB.PopularModel&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in PomeloTestHB.ArticleVM.getAllMostPopularArticles() -&gt; ()"
+                  moduleName = "PomeloTestHB"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/premalkhetani/Downloads/PomeloTestHB/PomeloTestHB/PopularArticles/ViewModel/ArticleVM.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "23"
+                  endingLineNumber = "23"
+                  offsetFromSymbolStart = "996">
+               </Location>
+               <Location
+                  uuid = "E1129375-2637-4D33-8C48-9F9D1C526751 - 33a267381e126480"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;PomeloTestHB.PopularModel&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in PomeloTestHB.ArticleVM.getAllMostPopularArticles() -&gt; ()"
+                  moduleName = "PomeloTestHB"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/premalkhetani/Downloads/PomeloTestHB/PomeloTestHB/PopularArticles/ViewModel/ArticleVM.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "23"
+                  endingLineNumber = "23"
+                  offsetFromSymbolStart = "1160">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "60FDF1E1-F5DF-4943-8001-84A49FCBE077"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PomeloTestHB/Network/APIManager/APIManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "31"
+            endingLineNumber = "31"
+            landmarkName = "request(_:url:method:param:header:file:type:fullAccess:encoding:isFromService:completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "12819186-3685-4048-84E4-5F3DC0784E18"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PomeloTestHB/Network/APIManager/APIManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "38"
+            endingLineNumber = "38"
+            landmarkName = "request(_:url:method:param:header:file:type:fullAccess:encoding:isFromService:completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "FE0F7606-31F9-4C6E-B19A-66D90412E989"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PomeloTestHB/Network/APIManager/APIManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "53"
+            endingLineNumber = "53"
+            landmarkName = "request(_:url:method:param:header:file:type:fullAccess:encoding:isFromService:completion:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "FE0F7606-31F9-4C6E-B19A-66D90412E989 - d6ba7dc06eaa4d12"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Alamofire.DataResponse&lt;&#x3c4;_0_0, Alamofire.AFError&gt;) -&gt; () in PomeloTestHB.AppAPIManager.request&lt;&#x3c4;_0_0 where &#x3c4;_0_0: Swift.Decodable&gt;(_: Swift.Bool, url: Swift.String, method: Alamofire.HTTPMethod, param: Swift.Optional&lt;Swift.Dictionary&lt;Swift.String, Any&gt;&gt;, header: Swift.Optional&lt;Alamofire.HTTPHeaders&gt;, file: Swift.Optional&lt;Swift.Dictionary&lt;Swift.String, Any&gt;&gt;, type: &#x3c4;_0_0.Type, fullAccess: Swift.Bool, encoding: PomeloTestHB.Encoding, isFromService: Swift.Bool, completion: (Swift.Optional&lt;&#x3c4;_0_0&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "PomeloTestHB"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/premalkhetani/Downloads/PomeloTestHB/PomeloTestHB/Network/APIManager/APIManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "53"
+                  endingLineNumber = "53"
+                  offsetFromSymbolStart = "396">
+               </Location>
+               <Location
+                  uuid = "FE0F7606-31F9-4C6E-B19A-66D90412E989 - d6ba7dc06eaa4d12"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Alamofire.DataResponse&lt;&#x3c4;_0_0, Alamofire.AFError&gt;) -&gt; () in PomeloTestHB.AppAPIManager.request&lt;&#x3c4;_0_0 where &#x3c4;_0_0: Swift.Decodable&gt;(_: Swift.Bool, url: Swift.String, method: Alamofire.HTTPMethod, param: Swift.Optional&lt;Swift.Dictionary&lt;Swift.String, Any&gt;&gt;, header: Swift.Optional&lt;Alamofire.HTTPHeaders&gt;, file: Swift.Optional&lt;Swift.Dictionary&lt;Swift.String, Any&gt;&gt;, type: &#x3c4;_0_0.Type, fullAccess: Swift.Bool, encoding: PomeloTestHB.Encoding, isFromService: Swift.Bool, completion: (Swift.Optional&lt;&#x3c4;_0_0&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "PomeloTestHB"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/premalkhetani/Downloads/PomeloTestHB/PomeloTestHB/Network/APIManager/APIManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "53"
+                  endingLineNumber = "53"
+                  offsetFromSymbolStart = "880">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "AA932888-7E9D-430B-BF26-0DC5F85B39FF"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PomeloTestHB/PopularArticles/ViewModel/ArticleVM.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "22"
+            endingLineNumber = "22"
+            landmarkName = "getAllMostPopularArticles()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "08B87AB0-1656-410E-84E8-2A166AF3FBCD"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PomeloTestHB/PopularArticles/HomeVC.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "71"
+            endingLineNumber = "71"
+            landmarkName = "tableView(_:cellForRowAt:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
