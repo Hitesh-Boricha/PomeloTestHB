@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		CC4F74BE2AEFA5330043E5B1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC4F74BD2AEFA5330043E5B1 /* AppDelegate.swift */; };
-		CC4F74C02AEFA5330043E5B1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC4F74BF2AEFA5330043E5B1 /* SceneDelegate.swift */; };
 		CC4F74C52AEFA5330043E5B1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC4F74C32AEFA5330043E5B1 /* Main.storyboard */; };
 		CC4F74CA2AEFA5330043E5B1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC4F74C92AEFA5330043E5B1 /* Assets.xcassets */; };
 		CC4F74CD2AEFA5330043E5B1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC4F74CB2AEFA5330043E5B1 /* LaunchScreen.storyboard */; };
@@ -19,13 +18,11 @@
 		CC4F74E32AEFA7470043E5B1 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = CC4F74E22AEFA7470043E5B1 /* Alamofire */; };
 		CC4F777E2AEFA8000043E5B1 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC4F761E2AEFA8000043E5B1 /* Constants.swift */; };
 		CC4F777F2AEFA8000043E5B1 /* Enum.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC4F76202AEFA8000043E5B1 /* Enum.swift */; };
-		CC4F77922AEFA8000043E5B1 /* SharedManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC4F76372AEFA8000043E5B1 /* SharedManager.swift */; };
 		CC4F77932AEFA8000043E5B1 /* Roboto-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CC4F763A2AEFA8000043E5B1 /* Roboto-Medium.ttf */; };
 		CC4F77942AEFA8000043E5B1 /* Roboto-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CC4F763B2AEFA8000043E5B1 /* Roboto-Regular.ttf */; };
 		CC4F77952AEFA8000043E5B1 /* Roboto-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CC4F763C2AEFA8000043E5B1 /* Roboto-Bold.ttf */; };
 		CC4F77962AEFA8000043E5B1 /* Roboto-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CC4F763D2AEFA8000043E5B1 /* Roboto-Black.ttf */; };
 		CC4F77972AEFA8000043E5B1 /* Font.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC4F763E2AEFA8000043E5B1 /* Font.swift */; };
-		CC4F77A12AEFAFD70043E5B1 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC4F77A02AEFAFD70043E5B1 /* UIViewController+Extension.swift */; };
 		CC4F77A32AEFB0630043E5B1 /* UIWindow+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC4F77A22AEFB0630043E5B1 /* UIWindow+Extension.swift */; };
 		CC4F77A92AEFD06A0043E5B1 /* PopularModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC4F77A82AEFD06A0043E5B1 /* PopularModel.swift */; };
 		CC4F77AB2AEFD4460043E5B1 /* ArticleVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC4F77AA2AEFD4460043E5B1 /* ArticleVM.swift */; };
@@ -59,7 +56,6 @@
 /* Begin PBXFileReference section */
 		CC4F74BA2AEFA5330043E5B1 /* PomeloTestHB.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PomeloTestHB.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC4F74BD2AEFA5330043E5B1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		CC4F74BF2AEFA5330043E5B1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		CC4F74C42AEFA5330043E5B1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CC4F74C92AEFA5330043E5B1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CC4F74CC2AEFA5330043E5B1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -68,13 +64,11 @@
 		CC4F74D82AEFA63E0043E5B1 /* Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
 		CC4F761E2AEFA8000043E5B1 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		CC4F76202AEFA8000043E5B1 /* Enum.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Enum.swift; sourceTree = "<group>"; };
-		CC4F76372AEFA8000043E5B1 /* SharedManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SharedManager.swift; sourceTree = "<group>"; };
 		CC4F763A2AEFA8000043E5B1 /* Roboto-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Medium.ttf"; sourceTree = "<group>"; };
 		CC4F763B2AEFA8000043E5B1 /* Roboto-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Regular.ttf"; sourceTree = "<group>"; };
 		CC4F763C2AEFA8000043E5B1 /* Roboto-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Bold.ttf"; sourceTree = "<group>"; };
 		CC4F763D2AEFA8000043E5B1 /* Roboto-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Black.ttf"; sourceTree = "<group>"; };
 		CC4F763E2AEFA8000043E5B1 /* Font.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Font.swift; sourceTree = "<group>"; };
-		CC4F77A02AEFAFD70043E5B1 /* UIViewController+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
 		CC4F77A22AEFB0630043E5B1 /* UIWindow+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIWindow+Extension.swift"; sourceTree = "<group>"; };
 		CC4F77A82AEFD06A0043E5B1 /* PopularModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularModel.swift; sourceTree = "<group>"; };
 		CC4F77AA2AEFD4460043E5B1 /* ArticleVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleVM.swift; sourceTree = "<group>"; };
@@ -145,7 +139,6 @@
 				CC4F74E42AEFA8000043E5B1 /* Resources */,
 				CC4F74D42AEFA63E0043E5B1 /* Network */,
 				CC4F74BD2AEFA5330043E5B1 /* AppDelegate.swift */,
-				CC4F74BF2AEFA5330043E5B1 /* SceneDelegate.swift */,
 				CC4F74C92AEFA5330043E5B1 /* Assets.xcassets */,
 				CC4F74CB2AEFA5330043E5B1 /* LaunchScreen.storyboard */,
 				CC4F74CE2AEFA5330043E5B1 /* Info.plist */,
@@ -184,7 +177,6 @@
 				CC4F779F2AEFAFB90043E5B1 /* Extension */,
 				CC4F761D2AEFA8000043E5B1 /* Constants */,
 				CC4F761F2AEFA8000043E5B1 /* Enum */,
-				CC4F76362AEFA8000043E5B1 /* SharedManager */,
 				CC4F76382AEFA8000043E5B1 /* Fonts */,
 			);
 			path = Resources;
@@ -204,14 +196,6 @@
 				CC4F76202AEFA8000043E5B1 /* Enum.swift */,
 			);
 			path = Enum;
-			sourceTree = "<group>";
-		};
-		CC4F76362AEFA8000043E5B1 /* SharedManager */ = {
-			isa = PBXGroup;
-			children = (
-				CC4F76372AEFA8000043E5B1 /* SharedManager.swift */,
-			);
-			path = SharedManager;
 			sourceTree = "<group>";
 		};
 		CC4F76382AEFA8000043E5B1 /* Fonts */ = {
@@ -238,7 +222,6 @@
 			isa = PBXGroup;
 			children = (
 				CC4F77A22AEFB0630043E5B1 /* UIWindow+Extension.swift */,
-				CC4F77A02AEFAFD70043E5B1 /* UIViewController+Extension.swift */,
 				CC4F77B52AEFDDC90043E5B1 /* String+Extension.swift */,
 			);
 			path = Extension;
@@ -446,8 +429,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				CC4F77972AEFA8000043E5B1 /* Font.swift in Sources */,
-				CC4F77A12AEFAFD70043E5B1 /* UIViewController+Extension.swift in Sources */,
-				CC4F77922AEFA8000043E5B1 /* SharedManager.swift in Sources */,
 				CC4F777E2AEFA8000043E5B1 /* Constants.swift in Sources */,
 				CC4F77A92AEFD06A0043E5B1 /* PopularModel.swift in Sources */,
 				CC4F77AE2AEFDA070043E5B1 /* HomeVC.swift in Sources */,
@@ -458,7 +439,6 @@
 				CC4F74DA2AEFA63E0043E5B1 /* Reachability.swift in Sources */,
 				CC4F74D92AEFA63E0043E5B1 /* APIManager.swift in Sources */,
 				CC4F77AF2AEFDA070043E5B1 /* WebViewVC.swift in Sources */,
-				CC4F74C02AEFA5330043E5B1 /* SceneDelegate.swift in Sources */,
 				CC4F77B12AEFDA9F0043E5B1 /* PopularListCell.swift in Sources */,
 				CC4F77AB2AEFD4460043E5B1 /* ArticleVM.swift in Sources */,
 			);

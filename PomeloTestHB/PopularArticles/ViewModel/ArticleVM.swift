@@ -7,12 +7,15 @@
 
 import Foundation
 import Alamofire
+import UIKit
 class ArticleVM : NSObject {
     
     var bindToView : ((String) -> ()) = {_ in }
     var bindArticlToView : (() -> ()) = {}
-    var articles : [MostPopularResult]?
-    
+    var articles: [MostPopularResult] = []
+    var searchedList: [MostPopularResult] = []
+    var searching = false
+
     func getAllMostPopularArticles()  {
         let param = [
             "api-key" : "VEkySdjGQhEMyPp4NL3pQoXPX9GNAKk3"
@@ -24,6 +27,26 @@ class ArticleVM : NSObject {
             }
             self.articles = data
             self.bindArticlToView()
+        }
+    }
+    func filterPopularList(with searchText: String) {
+        searchedList = articles.filter {
+            return $0.title!.range(of: searchText, options: .caseInsensitive) != nil
+        }
+        bindArticlToView()
+    }
+    
+    // Implemant search func logic here
+    func performSearch(with searchText: String, searchBar: UISearchBar) {
+        if !searchText.isEmpty {
+            searchedList.removeAll()
+            filterPopularList(with: searchText)
+            searching = true
+            searchBar.enablesReturnKeyAutomatically = false
+        } else {
+            searching = false
+            searchBar.enablesReturnKeyAutomatically = true
+            searchBar.text = ""
         }
     }
 }

@@ -8,40 +8,18 @@
 import Foundation
 import UIKit
 
-enum AppStoryboard: String {
-    case main = "Main"
-    case home = "Home"
-    var instance: UIStoryboard {
-        return UIStoryboard(name: self.rawValue, bundle: Bundle.main)
-    }
-    func viewController<T: UIViewController>(viewControllerClass: T.Type) -> T {
-        let storyboardID = (viewControllerClass as UIViewController.Type).storyboardID
-        guard let scene = instance.instantiateViewController(withIdentifier: storyboardID) as? T else {
-            fatalError("ViewController with identifier \(storyboardID), not found in \(self.rawValue) Storyboard.\nFile : \("file") \nLine Number : \("line") \nFunction : \("function")")
-        }
-        return scene
-    }
-    func initialViewController() -> UIViewController? {
-        return instance.instantiateInitialViewController()
-    }
-    func initialTabViewController() -> UITabBarController? {
-        return instance.instantiateInitialViewController()
-    }
-}
-
-
 enum AppBaseURL {
     case developemt
-    case staging
-    case production
+//    case staging
+//    case production
     var desc : String {
         switch self {
         case .developemt :
             return "https://api.nytimes.com/svc/"
-        case .staging :
-            return "https://api.nytimes.com/svc/"
-        case .production :
-            return "https://api.nytimes.com/svc/"
+//        case .staging :
+//            return "https://api.nytimes.com/svc/"
+//        case .production :
+//            return "https://api.nytimes.com/svc/"
         }        
     }
 }

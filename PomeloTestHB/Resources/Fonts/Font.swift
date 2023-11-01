@@ -12,6 +12,7 @@ extension UIFont {
     class func RobotoRegular(size: CGFloat) -> UIFont {
         return UIFont(name: "Roboto-Regular", size: size)!
     }
+    /*
     class func RobotoBlack(size: CGFloat) -> UIFont {
         return UIFont(name: "Roboto-Black", size: size)!
     }
@@ -21,4 +22,5 @@ extension UIFont {
     class func RobotoMedium(size: CGFloat) -> UIFont {
         return UIFont(name: "Roboto-Medium", size: size)!
     }
+    */
 }

@@ -12,7 +12,6 @@ let kScreenSize = UIScreen.main.bounds
 let kScreenWidth = UIScreen.main.bounds.width
 let kScreenHeight = UIScreen.main.bounds.height
 let kAppDelegate = UIApplication.shared.delegate as! AppDelegate
-var localTimeZoneIdentifier: String { return TimeZone.current.identifier }
 
 
 class CommonFunctions: NSObject {

@@ -13,10 +13,7 @@ class HomeVC: UIViewController {
     
     @IBOutlet var tblPopularList: UITableView!
     @IBOutlet weak var popularSearchbar: UISearchBar!
-    private var articleModel : ArticleVM?
-    var popularList = [MostPopularResult]()
-    var searchedList: [MostPopularResult] = []
-    var searching = false
+    var articleModel: ArticleVM = ArticleVM()
     var imageUrl = ""
     
     override func loadView() {
@@ -31,7 +28,7 @@ class HomeVC: UIViewController {
     }
     
     func sortPopularList() {
-        popularList.sort(by: { $0.updated!.compare($1.updated!) == .orderedDescending })
+        articleModel.articles.sort(by: { $0.updated!.compare($1.updated!) == .orderedDescending })
         DispatchQueue.main.async {
             self.tblPopularList.reloadData()
         }
@@ -39,9 +36,8 @@ class HomeVC: UIViewController {
     
     // MARK: - Api calls
     func callMostPopularApi() {
-        self.articleModel?.getAllMostPopularArticles()
-        self.articleModel?.bindArticlToView = { [unowned self] in
-            self.popularList = self.articleModel?.articles ?? [MostPopularResult]()
+        self.articleModel.getAllMostPopularArticles()
+        self.articleModel.bindArticlToView = { [unowned self] in
             sortPopularList()
         }
     }
@@ -49,17 +45,17 @@ class HomeVC: UIViewController {
 
 extension HomeVC: UITableViewDataSource, UITableViewDelegate {
     func tableView(_: UITableView, numberOfRowsInSection _: Int) -> Int {
-        if searching {
-            return searchedList.count
+        if articleModel.searching {
+            return articleModel.searchedList.count
         } else {
-            return popularList.count
+            return articleModel.articles.count
         }
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: PopularListCell.reuseID(), for: indexPath) as? PopularListCell else { return UITableViewCell() }
-        if searching {
-            let list = searchedList[indexPath.row]
+        if articleModel.searching {
+            let list = articleModel.searchedList[indexPath.row]
             cell.setPopularList(list: list)
             if list.media!.count > 0 {
                 if list.media![0].mediaList!.count > 0 {
@@ -69,7 +65,7 @@ extension HomeVC: UITableViewDataSource, UITableViewDelegate {
                 }
             }
         } else {
-            let list = popularList[indexPath.row]
+            let list = articleModel.articles[indexPath.row]
             cell.setPopularList(list: list)
             if let url = list.media?[0].mediaList?[0].url {
                 imageUrl = url
@@ -99,19 +95,16 @@ extension HomeVC: UITableViewDataSource, UITableViewDelegate {
     }
     
     func tableView(_: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let destinationVC = WebViewVC.instantiate(fromAppStoryboard: .main)
-        if searching {
-            let obj = searchedList[indexPath.row]
-            if let urlDetails = obj.url {
-                destinationVC.urlAddress = urlDetails
-            }
+        
+        guard let objWeb = self.storyboard?.instantiateViewController(withIdentifier: "WebViewVC") as? WebViewVC else { return }
+        if articleModel.searching {
+            let obj = articleModel.searchedList[indexPath.row]
+            objWeb.urlAddress = obj.url!
         } else {
-            let obj = popularList[indexPath.row]
-            if let urlDetails = obj.url {
-                destinationVC.urlAddress = urlDetails
-            }
+            let obj = articleModel.articles[indexPath.row]
+            objWeb.urlAddress = obj.url!
         }
-        self.pushTo(destinationVC)
+        self.navigationController?.pushViewController(objWeb, animated: true)
     }
 }
 
@@ -124,23 +117,12 @@ extension HomeVC: UISearchBarDelegate {
     }
     
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
-        if !searchText.isEmpty {
-            searchBar.enablesReturnKeyAutomatically = false
-            searchedList.removeAll()
-            searchedList = popularList.filter {
-                return $0.title!.range(of: searchText, options: .caseInsensitive) != nil
-            }
-            searching = true
-        } else {
-            searching = false
-            searchBar.enablesReturnKeyAutomatically = true
-            searchBar.text = ""
-        }
+        articleModel.performSearch(with: searchText, searchBar: searchBar)
         tblPopularList.reloadData()
     }
     
     func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
-        searching = false
+        articleModel.searching = false
         searchBar.text = ""
         searchBar.showsCancelButton = false
         searchBar.searchTextField.endEditing(true)
